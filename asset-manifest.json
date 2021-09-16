@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/YK177/simple-react-hw/static/css/main.d07ec401.chunk.css",
-    "main.js": "/YK177/simple-react-hw/static/js/main.33b7cf02.chunk.js",
-    "main.js.map": "/YK177/simple-react-hw/static/js/main.33b7cf02.chunk.js.map",
-    "runtime-main.js": "/YK177/simple-react-hw/static/js/runtime-main.ce550c65.js",
-    "runtime-main.js.map": "/YK177/simple-react-hw/static/js/runtime-main.ce550c65.js.map",
-    "static/js/2.719e5169.chunk.js": "/YK177/simple-react-hw/static/js/2.719e5169.chunk.js",
-    "static/js/2.719e5169.chunk.js.map": "/YK177/simple-react-hw/static/js/2.719e5169.chunk.js.map",
-    "index.html": "/YK177/simple-react-hw/index.html",
-    "static/css/main.d07ec401.chunk.css.map": "/YK177/simple-react-hw/static/css/main.d07ec401.chunk.css.map",
-    "static/js/2.719e5169.chunk.js.LICENSE.txt": "/YK177/simple-react-hw/static/js/2.719e5169.chunk.js.LICENSE.txt"
+    "main.css": "/simple-react-hw/static/css/main.d07ec401.chunk.css",
+    "main.js": "/simple-react-hw/static/js/main.357ca5db.chunk.js",
+    "main.js.map": "/simple-react-hw/static/js/main.357ca5db.chunk.js.map",
+    "runtime-main.js": "/simple-react-hw/static/js/runtime-main.72ce0a36.js",
+    "runtime-main.js.map": "/simple-react-hw/static/js/runtime-main.72ce0a36.js.map",
+    "static/js/2.719e5169.chunk.js": "/simple-react-hw/static/js/2.719e5169.chunk.js",
+    "static/js/2.719e5169.chunk.js.map": "/simple-react-hw/static/js/2.719e5169.chunk.js.map",
+    "index.html": "/simple-react-hw/index.html",
+    "static/css/main.d07ec401.chunk.css.map": "/simple-react-hw/static/css/main.d07ec401.chunk.css.map",
+    "static/js/2.719e5169.chunk.js.LICENSE.txt": "/simple-react-hw/static/js/2.719e5169.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ce550c65.js",
+    "static/js/runtime-main.72ce0a36.js",
     "static/js/2.719e5169.chunk.js",
     "static/css/main.d07ec401.chunk.css",
-    "static/js/main.33b7cf02.chunk.js"
+    "static/js/main.357ca5db.chunk.js"
   ]
 }
