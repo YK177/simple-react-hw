@@ -1,5 +1,8 @@
 import React from 'react'
 import s from './AlternativeMessage.module.css'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faHeart} from "@fortawesome/free-solid-svg-icons/faHeart";
+import {faShareAlt} from "@fortawesome/free-solid-svg-icons/faShareAlt";
 
 type PropsType = {
     data: AltDataType
@@ -34,11 +37,15 @@ function AlternativeMessage(props: PropsType) {
                     </p>
                     <div className={s.testimonials}>
                         <div className={s.item}>
-                            <button>Like</button>
+                            <div>
+                                <FontAwesomeIcon icon={faHeart}/>
+                            </div>
                             <p>{props.data.likeCount} people liked this</p>
                         </div>
                         <div className={s.item}>
-                            <button>Share</button>
+                            <div>
+                                <FontAwesomeIcon icon={faShareAlt}/>
+                            </div>
                             <p>{props.data.shareCount}</p>
                         </div>
                     </div>

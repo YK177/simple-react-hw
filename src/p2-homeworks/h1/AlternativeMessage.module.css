@@ -1,5 +1,4 @@
 .alt_message {
-    background: #f1f1f1;
     padding: 20px 0;
     color: #444444;
 }
@@ -55,8 +54,13 @@
 .item {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
-.item button {
+.item div {
     margin-right: 10px;
+}
+
+.item:hover div {
+    color: red;
 }
