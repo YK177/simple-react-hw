@@ -29,8 +29,8 @@ const altMessageData2: AltDataType = {
 
 function HW1() {
     return (
-        <div>
-            <hr/>
+        <div className={'task'}>
+
             homeworks 1
 
             {/*should work (должно работать)*/}
@@ -42,13 +42,13 @@ function HW1() {
                 time={messageData.time}
             />
 
-            <hr/>
+
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeMessage/>*/}
             <AlternativeMessage data={altMessageData1}/>
             <AlternativeMessage data={altMessageData2}/>
 
-            <hr/>
+
         </div>
     )
 }

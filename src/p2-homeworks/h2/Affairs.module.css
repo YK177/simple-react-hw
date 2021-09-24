@@ -1,3 +1,77 @@
-.someClass {
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 
+.affairsBlock {
+    margin-bottom: 20px;
+}
+
+.buttonsBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    padding: 5px 0;
+    text-transform: capitalize;
+    align-items: center;
+    font-size: 16px;
+}
+
+.title {
+    flex: 1 1 auto;
+}
+
+.priority {
+    flex: 0 0 80px;
+}
+
+.high {
+    color: greenyellow;
+}
+
+.middle {
+    color: orange;
+}
+
+.low {
+    color: red;
+}
+
+.delete {
+    line-height: 1;
+    flex: 0 0 20px;
+    height: 20px;
+    font-weight: 500;
+    border: 1px solid red;
+    border-radius: 50%;
+    background: transparent;
+    color: red;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete:hover {
+    box-shadow: 3px -1px 5px red;
+    text-shadow: 3px -1px 5px red;
+}
+
+.btn{
+    padding: 5px 10px;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.btn.all{
+    color: white;
+}
+
+.btn:hover{
+    box-shadow: 3px -1px 5px;
+    text-shadow: 3px -1px 5px;
 }

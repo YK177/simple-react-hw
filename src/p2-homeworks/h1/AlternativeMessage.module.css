@@ -38,12 +38,18 @@
     justify-content: space-around;
 }
 
+.info h4{
+    font-size: 16px;
+    font-weight: 700;
+}
+
 .body {
     padding: 10px;
 }
 
 .comment {
     margin-bottom: 20px;
+    line-height: 150%;
 }
 
 .testimonials {
