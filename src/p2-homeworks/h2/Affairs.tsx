@@ -3,7 +3,7 @@ import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 import s from './Affairs.module.css'
 
-type AffairsPropsType = { // need to fix any
+type AffairsPropsType = {
     data: Array<AffairType>
     setFilter: (arg: FilterType) => void
     deleteAffairCallback: (_id: number) => void
@@ -17,7 +17,6 @@ function Affairs(props: AffairsPropsType) {
             deleteAffairCallback={props.deleteAffairCallback}
         />
     ))
-
 
     const setAll = () => {
         props.setFilter('all');
