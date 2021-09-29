@@ -21,7 +21,7 @@ const Greeting: React.FC<GreetingPropsType> = (
             <div className={s.inpWrapper}>
                 <div className={s.inpBody}>
                     <input
-                        placeholder={'Enter you name...'}
+                        placeholder={'Enter your name...'}
                         value={name}
                         onChange={setNameCallback}
                         className={`${errorClass} ${s.inp}`}
