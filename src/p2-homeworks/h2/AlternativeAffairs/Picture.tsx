@@ -4,7 +4,7 @@ import {PictureType} from "./AlternativeAffairs";
 
 type PicturePropsType = {
     data: PictureType
-    delete: (id: number) => void
+    delete: (id: string) => void
 }
 
 export const Picture = (props: PicturePropsType) => {

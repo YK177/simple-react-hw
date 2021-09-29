@@ -3,10 +3,11 @@ import s from './AlternativeAffairs.module.css';
 import {FilterValueType, PictureType} from "./AlternativeAffairs";
 import {Picture} from "./Picture";
 import {FilterButton} from "./FilterButton";
+import { v1 } from "uuid";
 
 type PicturesPropsType = {
     data: Array<PictureType>
-    delete: (id: number) => void
+    delete: (id: string) => void
     filter: (value: FilterValueType) => void
     filterArray: Array<FilterValueType>
 }
@@ -21,10 +22,10 @@ export const Pictures = (props: PicturesPropsType) => {
             />
         )
     })
-    const mappedButtons = props.filterArray.map((f, i) => {
+    const mappedButtons = props.filterArray.map((f) => {
         return (
             <FilterButton
-                key={i}
+                key={v1()}
                 value={f}
                 filter={props.filter}
             />
