@@ -1,18 +1,13 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react'
 import Greeting from './Greeting'
-import {UserType} from './HW3';
+import {UserType} from './HW3'
 
 type GreetingContainerPropsType = {
-    users: UserType[] // need to fix any
-    addUserCallback: (name: string) => void // need to fix any
+    users: UserType[]
+    addUserCallback: (name: string) => void
 }
 
-// более простой и понятный для новичков
-// function GreetingContainer(props: GreetingPropsType) {
-
-// более современный и удобный для про :)
-// уровень локальной логики
-const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
+const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => {
     const [name, setName] = useState<string>('')
     const [error, setError] = useState<string>('')
 
@@ -22,24 +17,18 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     }
 
     const addUser = () => {
-        addUserCallback(name)
-        alert(`Hello  ${name}!`)
-        setName('')
-    }
-
-    const addUserOnEnterPress = (e: KeyboardEvent<HTMLInputElement>) => {
-        if (e.key === 'Enter') {
-            addUser()
-        }
-    }
-
-    const addUserOnClick = () => {
         if (name.trim() === '') {
             setError('Field is required!')
         } else {
-            addUser()
+            addUserCallback(name.trim())
+            alert(`Hello  ${name.trim()}!`)
+            setName('')
         }
     }
+
+    const addUserOnEnterPress = (e: KeyboardEvent<HTMLInputElement>) => (e.key === 'Enter') && addUser()
+
+    const addUserOnClick = () => addUser()
 
     const totalUsers = `${users.length} users already joined us!`
 

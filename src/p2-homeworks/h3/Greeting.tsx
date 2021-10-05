@@ -10,11 +10,16 @@ type GreetingPropsType = {
     totalUsers: string
 }
 
-// презентационная компонента (для верстальщика)
-const Greeting: React.FC<GreetingPropsType> = (
-    {name, setNameCallback, addUserOnEnterPress, addUserOnClick, error, totalUsers} // деструктуризация пропсов
-) => {
-    const errorClass = error ? s.error : '' // need to fix with (?:)
+const Greeting: React.FC<GreetingPropsType> = ({
+                                                   name,
+                                                   setNameCallback,
+                                                   addUserOnEnterPress,
+                                                   addUserOnClick,
+                                                   error,
+                                                   totalUsers
+                                               }) => {
+
+    const errorClass = error ? s.error : ''
 
     return (
         <div className={s.container}>
