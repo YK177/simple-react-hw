@@ -27,7 +27,7 @@
     object-fit: cover;
 }
 
-.delete {
+.deleteBtn {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -39,16 +39,21 @@
     justify-content: center;
     align-items: center;
     border: 1px solid transparent;
+    cursor: pointer;
 }
 
-.delete:hover {
+.deleteBtn button{
+    background: transparent;
+    line-height: 0;
+    color: white;
+}
+
+.deleteBtn:hover {
     border: 1px solid yellow;
 }
 
-.delete span {
-    color: white;
-    font-weight: 500;
-    font-size: 10px;
+.deleteBtn button:hover{
+    color: yellow;
 }
 
 .buttons {
@@ -56,7 +61,7 @@
     flex-direction: column;
 }
 
-.btn {
+.buttons button {
     flex: 0 0 30px;
     margin-bottom: 10px;
     width: 100%;
@@ -68,11 +73,44 @@
     text-transform: capitalize;
 }
 
-.btn:hover {
+.buttons button:hover {
     box-shadow: 3px -1px 5px #fff;
     text-shadow: 3px -1px 5px #fff;
 }
+.buttons button:active{
+    box-shadow: 3px -1px 5px yellow;
+    text-shadow: 3px -1px 5px yellow;
+}
 
-.btn:last-child {
+
+.buttons button:last-child {
     margin-bottom: 0;
+}
+
+.inp{
+    width: 100%;
+    padding: 5px;
+    border: 2px solid yellowgreen;
+    border-radius: 5px;
+    background: transparent;
+    color: yellowgreen;
+    margin-bottom: 5px;
+}
+
+.inp:focus{
+    box-shadow: 3px -1px 5px yellow;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.error:focus{
+    box-shadow: 3px -1px 5px red;
+}
+
+.errorText{
+    display: inline-flex;
+    height: 20px;
+    color: red;
 }

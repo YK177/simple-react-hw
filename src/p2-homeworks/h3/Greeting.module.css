@@ -37,11 +37,14 @@
 .error {
     border: 2px solid red;
 }
+
 .error:focus{
     box-shadow: 3px -1px 5px red;
 }
 
 .errorText{
+    display: inline-flex;
+    height: 20px;
     color: red;
 }
 

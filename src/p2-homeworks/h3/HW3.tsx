@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {v1} from 'uuid'
 import GreetingContainer from './GreetingContainer'
+import {AlternativeComponent} from './AlternativeGreetings/AlternativeComponent';
 
 export type UserType = {
     _id: string
@@ -25,7 +26,7 @@ function HW3() {
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeGreeting/>*/}
+            <AlternativeComponent/>
             <hr/>
         </div>
     )
