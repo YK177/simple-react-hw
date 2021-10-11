@@ -1,0 +1,83 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 10px;
+}
+
+.commonGrid {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    grid-gap: 10px;
+
+}
+
+.picturesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+}
+
+.picture {
+    position: relative;
+}
+
+.picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.delete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    background: red;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+}
+
+.delete:hover {
+    border: 1px solid yellow;
+}
+
+.delete span {
+    color: white;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    flex: 0 0 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    box-shadow: 3px -1px 5px #fff;
+    text-shadow: 3px -1px 5px #fff;
+}
+
+.btn:last-child {
+    margin-bottom: 0;
+}
+
+.active{
+    box-shadow: 3px -1px 5px red;
+    border: 2px solid red;
+}

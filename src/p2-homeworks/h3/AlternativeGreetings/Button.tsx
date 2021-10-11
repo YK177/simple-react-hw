@@ -11,7 +11,9 @@ export const Button: React.FC<ButtonPropsType> = ({name, callBack}) => {
     }
 
     return (
-        <button onClick={onClickHandler} className={''}>
+        <button
+            onClick={onClickHandler}
+            className={''}>
             {name}
         </button>
     )

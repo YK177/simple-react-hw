@@ -37,7 +37,6 @@ export const Pictures: React.FC<PicturesPropsType> = ({
 
     const deletePictureCallBack = (dId: string) => {
         deletePicture(dId)
-
     }
 
     const callBackHandlerForFilter = (value: FilterValueType) => {
