@@ -21,21 +21,40 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
 ) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
         // сделайте так чтоб работал onChange и onChangeChecked
+        onChange && onChange(e)
+        onChangeChecked && onChangeChecked(e.currentTarget.checked)
     }
 
     const finalInputClassName = `${s.checkbox} ${className ? className : ''}`
 
     return (
-        <label>
-            <input
-                type={'checkbox'}
-                onChange={onChangeCallback}
-                className={finalInputClassName}
+        <label className={s.label}>
+                <span className={s.checkbox}>
+                    <input
+                        type={'checkbox'}
+                        onChange={onChangeCallback}
+                        className={finalInputClassName}
 
-                {...restProps} // отдаём инпуту остальные пропсы если они есть (checked например там внутри)
-            />
+                        {...restProps} // отдаём инпуту остальные пропсы если они есть (checked например там внутри)
+                    />
+                     <span className={s.control}>
+                         <svg
+                             xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24"
+                             aria-hidden="true"
+                             focusable="false"
+                         >
+                            <path
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="3"
+                                d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                            />
+                        </svg>
+                    </span>
+                </span>
             {children && <span className={s.spanClassName}>{children}</span>}
-        </label> // благодаря label нажатие на спан передастся в инпут
+        </label>// благодаря label нажатие на спан передастся в инпут
     )
 }
 

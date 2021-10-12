@@ -1,7 +1,46 @@
 .default {
+    width: 100px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all ease 0.2s;
+}
 
+.default:hover {
+    box-shadow: 3px -1px 5px #fff;
+    text-shadow: 3px -1px 5px #fff;
+}
+
+.default:active{
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.default:disabled {
+    color: gray;
+    border-color: gray;
+}
+
+.default:disabled:hover {
+    box-shadow: none;
+    text-shadow: none;
 }
 
 .red {
-    background: red;
+    border-color: red;
+}
+
+.red:hover {
+    box-shadow: 3px -1px 5px red;
+    text-shadow: 3px -1px 5px red;
+}
+
+.red:active{
+    color: red;
+    box-shadow: none;
+    text-shadow: none;
 }
