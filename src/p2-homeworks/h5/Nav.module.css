@@ -1,0 +1,31 @@
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    margin-right: 20px;
+}
+
+.nav__item:last-child {
+    margin-right: 0;
+}
+
+.nav__link {
+    display: inline-flex;
+    padding: 5px 10px;
+    color: #34dcee;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all ease 0.2s;
+}
+
+.nav__link:hover {
+    color: #f2f830;
+    border-color: #bf1b2e;
+}
+
+.nav__link:active {
+    border-color: transparent;
+}

@@ -50,9 +50,8 @@ code {
 }
 
 #root{
-    flex: 1 1 auto;
     background-image: url("bg8.jpg");
-    padding: 50px;
+    flex: 1 1 auto;
 }
 
 .task{
