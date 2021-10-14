@@ -4,10 +4,11 @@ import {FilterValueType, PictureType} from './AlternativeAffairs';
 import {Picture} from './Picture';
 import {FilterButton} from './FilterButton';
 import {v1} from 'uuid';
+import SuperButton from '../../h4/common/c2-SuperButton/SuperButton';
 
 type PicturesPropsType = {
     data: Array<PictureType>
-    delete: (id: string) => void
+    deletePicture: (id: string) => void
     filter: FilterValueType
     setFilter: (value: FilterValueType) => void
     filterArray: Array<FilterValueType>
@@ -15,22 +16,31 @@ type PicturesPropsType = {
 
 export const Pictures = (props: PicturesPropsType) => {
     const mappedPictures = props.data.map(d => {
+        const deletePictureCallback = () => {
+            props.deletePicture(d.id)
+        }
         return (
             <Picture
                 key={d.id}
                 data={d}
-                delete={props.delete}
+                callback={deletePictureCallback}
             />
         )
     })
     const mappedButtons = props.filterArray.map((f) => {
+        const changeFilterCallback = () => {
+            props.setFilter(f)
+        }
         return (
-            <FilterButton
+            <SuperButton
                 key={v1()}
+                className={s.btn}
+                onClick={changeFilterCallback}
                 value={f}
-                filter={props.filter}
-                setFilter={props.setFilter}
-            />
+                red={props.filter === f}
+            >
+                {f}
+            </SuperButton>
         )
     })
 

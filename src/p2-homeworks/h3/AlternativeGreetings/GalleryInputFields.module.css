@@ -1,0 +1,31 @@
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputFields {
+    flex: 0 0 400px;
+    margin-right: 10px;
+    padding: 20px 0;
+}
+
+.inp {
+    margin-bottom: 10px;
+}
+
+.inp:last-child {
+    margin-bottom: 0;
+}
+
+.inp input {
+    margin-bottom: 5px;
+}
+
+.inputFields *:last-child {
+    margin-bottom: 0;
+}
+
+.addPictureBtn {
+    flex: 0 0 100px;
+}

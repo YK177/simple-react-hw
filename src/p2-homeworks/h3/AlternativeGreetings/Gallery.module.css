@@ -1,0 +1,21 @@
+.galleryWrapper {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    grid-gap: 10px;
+}
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+}
+
+.galleryFilters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.filterButton {
+    margin-bottom: 10px;
+}

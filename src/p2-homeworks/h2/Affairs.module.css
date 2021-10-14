@@ -29,49 +29,25 @@
     flex: 0 0 80px;
 }
 
+.delete {
+    flex: 0 0 30px;
+}
+
+.btn{
+   flex: 0 0 65px;
+}
+
 .high {
+    border-color: greenyellow;
     color: greenyellow;
 }
 
 .middle {
+    border-color: orange;
     color: orange;
 }
 
 .low {
+    border-color: red;
     color: red;
-}
-
-.delete {
-    line-height: 1;
-    flex: 0 0 20px;
-    height: 20px;
-    font-weight: 500;
-    border: 1px solid red;
-    border-radius: 50%;
-    background: transparent;
-    color: red;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.delete:hover {
-    box-shadow: 3px -1px 5px red;
-    text-shadow: 3px -1px 5px red;
-}
-
-.btn{
-    padding: 5px 10px;
-    background: transparent;
-    border-radius: 5px;
-    border: 1px solid;
-}
-
-.btn.all{
-    color: white;
-}
-
-.btn:hover{
-    box-shadow: 3px -1px 5px;
-    text-shadow: 3px -1px 5px;
 }

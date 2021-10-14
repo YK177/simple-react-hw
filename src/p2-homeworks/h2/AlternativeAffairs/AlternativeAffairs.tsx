@@ -105,7 +105,7 @@ function AlternativeAffairs() {
         <div className={s.container}>
             <Pictures
                 data={filteredPictures}
-                delete={deletePictureCallback}
+                deletePicture={deletePictureCallback}
                 filter={filter}
                 setFilter={setFilter}
                 filterArray={filterArray}
