@@ -29,3 +29,7 @@
 .nav__link:active {
     border-color: transparent;
 }
+
+.nav__link_active{
+    color: #f2f830;
+}

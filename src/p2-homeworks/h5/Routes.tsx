@@ -14,7 +14,7 @@ export const PATH = {
 
 function Routes() {
     return (
-        <div>
+        <>
             {/*Switch выбирает первый подходящий роут*/}
             <Switch>
 
@@ -30,7 +30,7 @@ function Routes() {
             <Route render={() => <Error404/>}/>
 
             </Switch>
-        </div>
+        </>
     )
 }
 
