@@ -38,6 +38,7 @@ export const AlternativeComponent = () => {
                 addImage={addImage}
                 changeFilter={setFilter}
                 filters={filterArray}
+                filter={filter}
             />
         </>
 

@@ -10,9 +10,10 @@ type PropsType = {
     addImage: (newUrl: string, newCategory: string) => void
     changeFilter: (filter: string) => void
     filters: string[]
+    filter:string
 }
 
-export const GalleryContainer: React.FC<PropsType> = ({gallery, removeImage, changeFilter, filters, addImage}) => {
+export const GalleryContainer: React.FC<PropsType> = ({gallery, removeImage, changeFilter, filters, addImage,filter}) => {
     return (
         <>
             <GalleryInputFields addImage={addImage}/>
@@ -21,6 +22,7 @@ export const GalleryContainer: React.FC<PropsType> = ({gallery, removeImage, cha
                 removeImage={removeImage}
                 changeFilter={changeFilter}
                 filters={filters}
+                filter={filter}
             />
         </>
     )

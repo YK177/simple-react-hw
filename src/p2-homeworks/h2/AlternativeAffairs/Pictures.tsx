@@ -2,7 +2,6 @@ import React from 'react';
 import s from './AlternativeAffairs.module.css';
 import {FilterValueType, PictureType} from './AlternativeAffairs';
 import {Picture} from './Picture';
-import {FilterButton} from './FilterButton';
 import {v1} from 'uuid';
 import SuperButton from '../../h4/common/c2-SuperButton/SuperButton';
 
@@ -36,7 +35,6 @@ export const Pictures = (props: PicturesPropsType) => {
                 key={v1()}
                 className={s.btn}
                 onClick={changeFilterCallback}
-                value={f}
                 red={props.filter === f}
             >
                 {f}

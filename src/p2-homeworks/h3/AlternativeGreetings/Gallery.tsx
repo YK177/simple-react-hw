@@ -10,9 +10,10 @@ type PropsType = {
     removeImage: (iID: string) => void
     changeFilter: (filter: string) => void
     filters: string[]
+    filter: string
 }
 
-export const Gallery: React.FC<PropsType> = ({gallery, removeImage, changeFilter, filters}) => {
+export const Gallery: React.FC<PropsType> = ({gallery, removeImage, changeFilter, filters, filter}) => {
 
     const images = gallery.map(i => {
         const removeImageCallback = () => removeImage(i.id)
@@ -33,7 +34,7 @@ export const Gallery: React.FC<PropsType> = ({gallery, removeImage, changeFilter
             <SuperButton
                 key={v1()}
                 className={s.filterButton}
-                value={f}
+                red={filter === f}
                 onClick={changeFilterCallback}
             >
                 {f}
@@ -50,7 +51,7 @@ export const Gallery: React.FC<PropsType> = ({gallery, removeImage, changeFilter
             </div>
             <div className={s.galleryFilters}>
                 {gallery.length > 0 &&
-                <SuperButton onClick={clickHandlerForAllButton} className={s.filterButton}>All</SuperButton>}
+                <SuperButton red={filter==='all'} onClick={clickHandlerForAllButton} className={s.filterButton}>All</SuperButton>}
                 {filterButtons}
             </div>
         </div>
