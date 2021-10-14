@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/simple-react-hw/static/css/main.950faa66.chunk.css",
-    "main.js": "/simple-react-hw/static/js/main.a705cc5f.chunk.js",
-    "main.js.map": "/simple-react-hw/static/js/main.a705cc5f.chunk.js.map",
+    "main.css": "/simple-react-hw/static/css/main.d47c9d59.chunk.css",
+    "main.js": "/simple-react-hw/static/js/main.cf3f4f0c.chunk.js",
+    "main.js.map": "/simple-react-hw/static/js/main.cf3f4f0c.chunk.js.map",
     "runtime-main.js": "/simple-react-hw/static/js/runtime-main.72ce0a36.js",
     "runtime-main.js.map": "/simple-react-hw/static/js/runtime-main.72ce0a36.js.map",
-    "static/js/2.52f91461.chunk.js": "/simple-react-hw/static/js/2.52f91461.chunk.js",
-    "static/js/2.52f91461.chunk.js.map": "/simple-react-hw/static/js/2.52f91461.chunk.js.map",
+    "static/js/2.a7f32675.chunk.js": "/simple-react-hw/static/js/2.a7f32675.chunk.js",
+    "static/js/2.a7f32675.chunk.js.map": "/simple-react-hw/static/js/2.a7f32675.chunk.js.map",
     "index.html": "/simple-react-hw/index.html",
-    "static/css/main.950faa66.chunk.css.map": "/simple-react-hw/static/css/main.950faa66.chunk.css.map",
-    "static/js/2.52f91461.chunk.js.LICENSE.txt": "/simple-react-hw/static/js/2.52f91461.chunk.js.LICENSE.txt",
+    "static/css/main.d47c9d59.chunk.css.map": "/simple-react-hw/static/css/main.d47c9d59.chunk.css.map",
+    "static/js/2.a7f32675.chunk.js.LICENSE.txt": "/simple-react-hw/static/js/2.a7f32675.chunk.js.LICENSE.txt",
     "static/media/index.css": "/simple-react-hw/static/media/bg8.dd85c54c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.72ce0a36.js",
-    "static/js/2.52f91461.chunk.js",
-    "static/css/main.950faa66.chunk.css",
-    "static/js/main.a705cc5f.chunk.js"
+    "static/js/2.a7f32675.chunk.js",
+    "static/css/main.d47c9d59.chunk.css",
+    "static/js/main.cf3f4f0c.chunk.js"
   ]
 }
