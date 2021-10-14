@@ -38,16 +38,16 @@
 }
 
 .high {
-    border-color: greenyellow;
-    color: greenyellow;
+    border-color: greenyellow !important;
+    color: greenyellow !important;
 }
 
 .middle {
-    border-color: orange;
-    color: orange;
+    border-color: orange !important;
+    color: orange !important;
 }
 
 .low {
-    border-color: red;
-    color: red;
+    border-color: red !important;
+    color: red !important;
 }
