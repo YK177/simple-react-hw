@@ -8,7 +8,7 @@ import HW4 from '../../h4/HW4'
 function PreJunior() {
     return (
         <div className={s.container}>
-            {/*<HW1/>*/}
+            <HW1/>
             <HW2/>
             <HW3/>
             <HW4/>
