@@ -1,0 +1,22 @@
+.body{
+    width: 250px;
+    margin:0 auto;
+    padding: 20px 0;
+}
+
+.users{
+    padding: 10px;
+}
+
+.user{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px dashed greenyellow;
+    font-size: 16px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
