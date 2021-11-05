@@ -1,0 +1,15 @@
+.body {
+    width: 200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.selectArea, .radioButtons {
+    padding: 15px 0;
+}
+
+.radioButtons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

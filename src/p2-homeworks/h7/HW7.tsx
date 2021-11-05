@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import s from './HW7.module.css'
 import SuperSelect from './common/c5-SuperSelect/SuperSelect'
 import SuperRadio from './common/c6-SuperRadio/SuperRadio'
 
@@ -8,25 +9,27 @@ function HW7() {
     const [value, onChangeOption] = useState(arr[1])
 
     return (
-        <div>
+        <div className={'task'}>
             <hr/>
             homeworks 7
 
             {/*should work (должно работать)*/}
-            <div>
-                <SuperSelect
-                    options={arr}
-                    value={value}
-                    onChangeOption={onChangeOption}
-                />
-            </div>
-            <div>
-                <SuperRadio
-                    name={'radio'}
-                    options={arr}
-                    value={value}
-                    onChangeOption={onChangeOption}
-                />
+            <div className={s.body}>
+                <div className={s.selectArea}>
+                    <SuperSelect
+                        options={arr}
+                        value={value}
+                        onChangeOption={onChangeOption}
+                    />
+                </div>
+                <div className={s.radioButtons}>
+                    <SuperRadio
+                        name={'radio'}
+                        options={arr}
+                        value={value}
+                        onChangeOption={onChangeOption}
+                    />
+                </div>
             </div>
 
             <hr/>

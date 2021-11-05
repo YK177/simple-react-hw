@@ -1,0 +1,16 @@
+.select {
+    width: 100%;
+    cursor: pointer;
+    padding: 2px 10px;
+    background: transparent;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    color: greenyellow;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.option {
+    background: #2f404f;
+    color: white;
+}
