@@ -3,7 +3,7 @@ import Clock from './Clock'
 
 function HW9() {
     return (
-        <div>
+        <div className={'task'}>
             <hr/>
             homeworks 9
 

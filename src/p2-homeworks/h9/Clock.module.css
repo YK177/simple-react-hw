@@ -1,0 +1,31 @@
+.body {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.clockFace {
+    padding: 20px 0;
+}
+
+.plug {
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.time {
+    height: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    color: yellowgreen;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    flex: 0 0 40%;
+}
