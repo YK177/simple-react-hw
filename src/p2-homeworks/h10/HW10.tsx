@@ -3,12 +3,12 @@ import s from './HW10.module.css'
 import spinner from './assets/img/spinner.svg'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {useDispatch, useSelector} from 'react-redux'
-import {AppStoreType} from './bll/store'
+import {AppStateType} from './bll/store'
 import {loadingAC} from './bll/loadingReducer'
 
 function HW10() {
 
-    const loading = useSelector<AppStoreType, boolean>(state => state.loading.loading)
+    const loading = useSelector<AppStateType, boolean>(state => state.loading.loading)
     const dispatch = useDispatch()
 
     const setLoading = () => {
