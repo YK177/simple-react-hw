@@ -1,0 +1,38 @@
+.container {
+    padding: 20px 0;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.response {
+    padding: 10px 0;
+}
+
+.item {
+    padding: 5px 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+.red {
+    color: #ee3e3e;
+}
+
+.green {
+    color: greenyellow;
+}
+
+.body {
+    display: flex;
+}
+
+.checkbox {
+    flex: 0 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    flex: 1 1 auto;
+}
