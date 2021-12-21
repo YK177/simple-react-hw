@@ -1,25 +1,15 @@
 {
   "files": {
-    "main.css": "/simple-react-hw/static/css/main.b6f6dd4e.chunk.css",
-    "main.js": "/simple-react-hw/static/js/main.4091e634.chunk.js",
-    "main.js.map": "/simple-react-hw/static/js/main.4091e634.chunk.js.map",
-    "runtime-main.js": "/simple-react-hw/static/js/runtime-main.72ce0a36.js",
-    "runtime-main.js.map": "/simple-react-hw/static/js/runtime-main.72ce0a36.js.map",
-    "static/css/2.e995eac1.chunk.css": "/simple-react-hw/static/css/2.e995eac1.chunk.css",
-    "static/js/2.222f7bd7.chunk.js": "/simple-react-hw/static/js/2.222f7bd7.chunk.js",
-    "static/js/2.222f7bd7.chunk.js.map": "/simple-react-hw/static/js/2.222f7bd7.chunk.js.map",
+    "main.css": "/simple-react-hw/static/css/main.ee05cbb8.css",
+    "main.js": "/simple-react-hw/static/js/main.12ede8fb.js",
+    "static/media/bg8.jpg": "/simple-react-hw/static/media/bg8.dd85c54cad524baf2a5c.jpg",
+    "static/media/spinner.svg": "/simple-react-hw/static/media/spinner.fb8fe5c12a2cab23a0d155756780aa86.svg",
     "index.html": "/simple-react-hw/index.html",
-    "static/css/2.e995eac1.chunk.css.map": "/simple-react-hw/static/css/2.e995eac1.chunk.css.map",
-    "static/css/main.b6f6dd4e.chunk.css.map": "/simple-react-hw/static/css/main.b6f6dd4e.chunk.css.map",
-    "static/js/2.222f7bd7.chunk.js.LICENSE.txt": "/simple-react-hw/static/js/2.222f7bd7.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/simple-react-hw/static/media/bg8.dd85c54c.jpg",
-    "static/media/spinner.0e46fe5e.svg": "/simple-react-hw/static/media/spinner.0e46fe5e.svg"
+    "main.ee05cbb8.css.map": "/simple-react-hw/static/css/main.ee05cbb8.css.map",
+    "main.12ede8fb.js.map": "/simple-react-hw/static/js/main.12ede8fb.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.72ce0a36.js",
-    "static/css/2.e995eac1.chunk.css",
-    "static/js/2.222f7bd7.chunk.js",
-    "static/css/main.b6f6dd4e.chunk.css",
-    "static/js/main.4091e634.chunk.js"
+    "static/css/main.ee05cbb8.css",
+    "static/js/main.12ede8fb.js"
   ]
 }
